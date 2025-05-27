@@ -1,13 +1,15 @@
-
+import './styles/main.scss'
+import { Carousel } from './components/Carousel'
+import Navbar from './components/Navbar'
 
 function App() {
 
 
   return (
     <>
-      <h1>
-        test
-      </h1>
+      <Navbar />
+      <Carousel />
+
     </>
   )
 }
