@@ -1,0 +1,74 @@
+@import './main.scss';
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  background: #f8f9fc;
+  min-height: 90vh;
+
+  .image img {
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: $radius;
+  }
+
+  .info {
+    max-width: 600px;
+
+    .tag {
+      background: $color-primary;
+      color: white;
+      display: inline-block;
+      padding: 0.3rem 0.7rem;
+      border-radius: $radius;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      color: $color-primary;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .meta {
+      color: $color-muted;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .rating {
+      color: #ffc107;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .desc {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .add {
+      background: $color-primary;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border-radius: $radius;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-primary-hover;
+      }
+    }
+  }
+}

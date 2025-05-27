@@ -2,3 +2,10 @@
 .keen-slider__slide {
   transition: transform 1s ease-in-out !important;
 }
+
+.list {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}

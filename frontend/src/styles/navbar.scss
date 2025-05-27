@@ -2,8 +2,10 @@
 
 .navbar {
   width: 100%;
-  padding: 1rem 2rem;
-  background-color: rgba($color-bg, 0.8);
+  height: 15vh;
+
+  padding: 0 2rem;
+  background-color: rgba($color-bg, 1);
   backdrop-filter: blur(6px);
   box-shadow: $shadow-lg;
   z-index: 999;
