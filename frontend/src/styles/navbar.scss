@@ -1,0 +1,99 @@
+@import './main.scss';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+
+  &.scrolled {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $color-primary;
+  }
+
+  &__links {
+    display: flex;
+    gap: 2rem;
+
+    li a {
+      color: $color-text;
+      font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    background: $color-secondary;
+    border-radius: $radius;
+    overflow: hidden;
+
+    input {
+      padding: 0.5rem 1rem;
+      border: none;
+      width: 150px;
+      background: transparent;
+    }
+
+    button {
+      background: $color-primary;
+      color: white;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
+
+      &:hover {
+        background: $color-primary-hover;
+      }
+    }
+  }
+
+  &__cart {
+    position: relative;
+    color: $color-text;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      background: $color-primary;
+      color: white;
+      border-radius: 50%;
+      padding: 0 6px;
+      font-size: 0.75rem;
+    }
+  }
+}
