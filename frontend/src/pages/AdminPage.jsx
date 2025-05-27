@@ -13,6 +13,7 @@ const AdminPage = () => {
         price: ''
     });
 
+
     const handleCategorySubmit = (e) => {
         e.preventDefault();
         if (newCategory.trim() && !categories.includes(newCategory)) {
