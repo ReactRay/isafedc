@@ -1,14 +1,11 @@
 @import './main.scss';
 
 .navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
   width: 100%;
   padding: 1rem 2rem;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba($color-bg, 0.8);
   backdrop-filter: blur(6px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: $shadow-lg;
   z-index: 999;
   direction: rtl;
   display: flex;
@@ -20,19 +17,14 @@
     background-color: rgba(255, 255, 255, 0.85);
   }
 
-  &__logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: $color-primary;
-  }
-
   &__links {
     display: flex;
     gap: 2rem;
 
     li a {
       color: $color-text;
-      font-weight: 500;
+      font-weight: 700;
+
       transition: color 0.3s;
 
       &:hover {
@@ -55,10 +47,8 @@
     overflow: hidden;
 
     input {
-      padding: 0.5rem 1rem;
+      padding: 0rem 1rem;
       border: none;
-      width: 150px;
-      background: transparent;
     }
 
     button {
@@ -95,5 +85,21 @@
       padding: 0 6px;
       font-size: 0.75rem;
     }
+  }
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-primary;
+  gap: 0.5rem;
+
+  img {
+    width: 5rem;
+    height: auto;
+
+    object-fit: contain;
   }
 }

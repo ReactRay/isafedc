@@ -9,14 +9,18 @@ const Navbar = () => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
         };
-
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     return (
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-            <div className="navbar__logo">🔒 אבטחה פלוס</div>
+            <div className="navbar__logo">
+                <img
+                    src="https://isafedsc.com/wp-content/uploads/2024/09/cropped-i-3-148x148.png"
+                    alt="לוגו אבטחה פלוס"
+                />
+            </div>
 
             <ul className="navbar__links">
                 <li><a href="#">דף הבית</a></li>

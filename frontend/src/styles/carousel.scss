@@ -16,6 +16,14 @@
   background-size: cover;
   background-position: center;
   transition: background 1s ease-in-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); // adjust opacity here
+    z-index: 1;
+  }
 }
 
 .hero-overlay {
@@ -27,7 +35,7 @@
   text-align: right;
 
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   }

@@ -21,8 +21,8 @@ export const Carousel = () => {
     const [sliderRef, slider] = useKeenSlider({
         loop: true,
         rtl: true,
-        renderMode: 'performance',
         drag: false,
+        renderMode: 'performance',
     });
 
     useEffect(() => {
