@@ -45,3 +45,22 @@
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   }
 }
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    height: 60vh;
+  }
+
+  .hero-overlay {
+    right: 5%;
+    top: 40%;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
